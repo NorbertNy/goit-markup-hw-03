@@ -11,16 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="main-page-body">
     <!-- Header -->
     <header class="page-header">
-      <nav class="header-nav">
+      <nav class="header-nav container">
         <a class="header-logo" href="./index.html">
           <span class="header-logo-beginning">Web</span>Studio</a
         >
-        <ul class="nav-list">
+        <ul class="nav-list list">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Студія</a>
           </li>
@@ -33,13 +37,13 @@
         </ul>
 
         <!-- Header address -->
-        <ul class="header-contacts">
-          <li class="mail-cont">
+        <ul class="header-contacts list">
+          <li class="mail-cont item">
             <a class="mail-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="tel-cont">
+          <li class="tel-cont item">
             <a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -49,40 +53,45 @@
     <main class="page-main">
       <section class="main-hero">
         <h1 class="main-hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-hero-button">Замовити послугу</button>
+        <button type="button" class="main-hero-button button">
+          Замовити послугу
+        </button>
       </section>
+      <!-- TODO спросить про margin le-ri 16.5 откуда они взялись? -->
       <section class="Features">
-        <!-- скрыть заголовок -->
-        <h2 class="hidden-header">Особливості</h2>
-        <ul class="features-list">
-          <li class="features-item">
-            <h3 class="features-head">увага до деталей</h3>
-            <p class="features-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-head">пунктуальність</h3>
-            <p class="features-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-head">планування</h3>
-            <p class="features-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-head">сучасні технології</h3>
-            <p class="features-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <!-- скрыть заголовок -->
+          <h2 class="hidden-header visually-hidden">Особливості</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="features-head">увага до деталей</h3>
+              <p class="features-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-head">пунктуальність</h3>
+              <p class="features-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-head">планування</h3>
+              <p class="features-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-head">сучасні технології</h3>
+              <p class="features-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="activity">
         <h2 class="activity-header">Чим ми займаємося</h2>
