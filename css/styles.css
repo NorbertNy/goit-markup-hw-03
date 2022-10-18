@@ -17,6 +17,7 @@ html {
 --hero-button-blue-color: #188CE8;
 --background-gray-color: #F5F4FA;
 --alternativ-gray-color-rgba: rgba(255, 255, 255, 0.6);
+--cards-border-gray-color:#EEEEEE;
 
 }
 
@@ -187,9 +188,9 @@ body {
     
 }
 
-.button {
-    /* border: 1px solid transparent; */
-}
+/* .button {
+    border: 1px solid transparent;
+} */
 
 .main-hero-button{
     display: inline-block;
@@ -383,7 +384,7 @@ body {
 }
 
 .position {
-    margin-top: 10;
+    margin-top: 10px;
     margin-bottom: 0;
 
     font-family: 'Roboto', sans-serif;
@@ -481,6 +482,10 @@ body {
 
 
 /* Portfolio Header style */
+.portfolio-header-nav {
+    display: flex;
+    align-items: center;
+}
 .portfolio-header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -498,8 +503,22 @@ body {
     text-decoration: none;
 }
 
+.portfolio-nav-list {
+    display: flex;
+    margin-left: 93px;
+}
 
+.portfolio-nav-item {
+    outline: 1px solid brown;
+}
+
+.portfolio-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
 .portfolio-nav-link {
+    display: block;
+    padding: 32px 0;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -516,17 +535,34 @@ body {
     list-style-type: none;
 }
 
+.portfolio-header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .portfolio-nav-link, .portfolio-mail-link, .portfolio-tel-link {
     text-decoration: none;
+    
 }
 
 .portfolio-mail-link, .portfolio-tel-link {
+    display: block;
+    padding: 32px 0;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-text-paragraf);
+}
+
+.portfolio-mail-cont, .portfolio-tel-cont {
+    outline: 1px solid yellow;
+}
+
+.portfolio-mail-cont {
+    margin-right: 50px;
 }
 
 .portfolio-mail-link:hover, .portfolio-mail-link:focus,
@@ -557,10 +593,26 @@ body {
     overflow: hidden;
 } */
 
+.filter {
+    padding: 94px 0;
+}
 
+
+.filter-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 
 .filter-button {
+    padding: 6px 22px;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -570,19 +622,40 @@ body {
     color: var(--main-color-text);
     background-color: var(--background-gray-color);
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
 .filter-button:hover, .filter-button:focus {
     background-color: var(--primary-blue-color);
     color: var(--primary-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-list {
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     list-style-type: none;
 }
 
 
+.portfolio-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item-content {
+    padding: 20px 24px;
+    border: 1px solid var(--cards-border-gray-color);
+}
+
+
 .portfolio-name {
+    margin: 0;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -592,6 +665,8 @@ body {
 }
 
 .portfolio-type {
+    margin-top: 4px;
+    margin-bottom: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -600,9 +675,7 @@ body {
     color: var(--color-text-paragraf);
 }
 
-.portfolio-list {
-    list-style-type: none;
-}
+
 
 
 /* Portfolio footer style */
@@ -610,8 +683,8 @@ body {
     background-color: var(--hero-footer-black-color);
 }
 
-.portfolio-footer-address {
-    font-style: normal;
+.portfolio-footer-container {
+    padding: 60px 0;
 }
 
 .portfolio-footer-logo {
@@ -621,14 +694,21 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
+    text-decoration: none;
 }
 
 .portfolio-footer-logo-beginning {
     color: var(--primary-blue-color);
 }
 
-.portfolio-footer-logo {
-    text-decoration: none;
+.portfolio-footer-address {
+    font-style: normal;
+}
+
+.portfolio-address-list {
+    margin-top: 20px;
+
+    list-style-type: none;
 }
 
 
@@ -641,6 +721,10 @@ body {
     color: var(--primary-white-color);
 }
 
+.portfolio-footer-mail-cont, .portfolio-footer-tel-cont {
+    margin-top: 9px;
+}
+
 .portfolio-footer-mail-link, .portfolio-footer-tel-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -650,9 +734,6 @@ body {
     color: var(--alternativ-gray-color-rgba);
 }
 
-.portfolio-address-list {
-    list-style-type: none;
-}
 
 .portfolio-address-link, .portfolio-footer-mail-link, .portfolio-footer-tel-link {
     text-decoration: none;
