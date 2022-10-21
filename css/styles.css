@@ -18,6 +18,7 @@ html {
 --background-gray-color: #F5F4FA;
 --alternativ-gray-color-rgba: rgba(255, 255, 255, 0.6);
 --cards-border-gray-color:#EEEEEE;
+--header-border-gray-color: #ECECEC;
 
 }
 
@@ -464,10 +465,18 @@ body {
 
 
 /* Portfolio Header style */
+.portfolio-header {
+    border-bottom: 1px solid var(--header-border-gray-color);
+}
+
+
 .portfolio-header-nav {
     display: flex;
     align-items: center;
+    
 }
+
+
 .portfolio-header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
